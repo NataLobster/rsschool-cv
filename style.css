@@ -10,13 +10,17 @@
 	flex-direction: column;
 	justify-content: space-between;
 	font-family: "Wittgenstein", serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #0e0d0d;
   }
 
   .container {
 	max-width: 1440px;
 	margin: 0 auto;
   }
-
+ /* стили для меню навигации*/
   .nav-list {
 	display:flex;
 	align-items: center;
@@ -32,7 +36,8 @@
   html {
 	scroll-behavior: smooth;
   }
-
+  
+ /*стили для секций */
   .section-item a {
 	color: #829985;
 	text-decoration: none;
@@ -57,14 +62,20 @@
 	}
   }
 
-  /* пример стилизации шрифта */
-  body {
-	font-family: "Wittgenstein", serif;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #4d2323;
+ /* для шапочки */
+  .about {
+	background-image: url(./assets/bg.jpg);
+	padding: 40px;
+	
   }
+  .profile-img {
+	border: 6px solid rgba(255, 255, 255, 0.8);
+	border-radius: 99px;
+    max-width: 220px;
+    width: 100%;
+	vertical-align: middle;
+  }
+
 
   /* пример стилизации заголовка */
   .section-title {
@@ -76,6 +87,21 @@
 	color: #829985;
   }
 
+  .section-title-about {
+	font-family: "Ga Maamli", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #101110;
+  }
+   h1 {
+	font-family: "Ga Maamli", sans-serif;
+	font-size: 50px;
+	font-weight: 400;
+   }
+
+
   /* пример стилизации ссылок */
   .link {
 	text-decoration: none;
@@ -86,3 +112,19 @@
   .link:hover {
 	color: #5d7260;
   }
+/* иконки для контактов */
+     
+ .social-icons img {
+	width: 32px;
+	height: 32px;
+	transition: transform 0.3s;
+  }
+
+  .social-icons a {
+	margin: 0 10px;
+  }
+  
+  .social-icons a:hover img {
+	transform: scale(1.2);
+  }
+
