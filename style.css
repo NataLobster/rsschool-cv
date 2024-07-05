@@ -1,3 +1,4 @@
+/* общие */
 * {
 	box-sizing: border-box;
   }
@@ -14,12 +15,14 @@
 	font-weight: 400;
 	line-height: 1.5;
 	color: #0e0d0d;
+	background-color: rgba(229, 235, 225, 0.767);
   }
 
   .container {
 	max-width: 1440px;
 	margin: 0 auto;
   }
+
  /* стили для меню навигации*/
   .nav-list {
 	display:flex;
@@ -56,17 +59,20 @@
 	width: 50%;
   }
 
-  @media (max-width: 768px) {
-	.section {
-	  width: 100%;
-	}
-  }
-
- /* для шапочки */
+ /* для шапочки и тапочек*/
   .about {
-	background-image: url(./assets/bg.jpg);
-	padding: 40px;
-	
+	background-image: url(./assets/img/bg.jpg);
+	background-size:cover;
+  	background-repeat: no-repeat;
+	border-top: 15px solid rgba(255, 255, 255, 0.8);
+	padding-left: 30px;
+	padding-bottom: 30px;
+	font-family: "Ga Maamli", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #101110;
   }
   .profile-img {
 	border: 6px solid rgba(255, 255, 255, 0.8);
@@ -76,8 +82,21 @@
 	vertical-align: middle;
   }
 
+  .logo{
+	width: 121px;
+  	height: 45px;
+	float: inline-end;
+	vertical-align: middle;
+  }
 
-  /* пример стилизации заголовка */
+  footer, header{
+	background-color: #9acfc7ee;
+	background-size: contain;
+	padding: 5px;
+  }
+
+ 
+  /* заголовок */
   .section-title {
 	font-family: "Ga Maamli", sans-serif;
 	font-size: 25px;
@@ -87,22 +106,15 @@
 	color: #829985;
   }
 
-  .section-title-about {
-	font-family: "Ga Maamli", sans-serif;
-	font-size: 30px;
+   /*блок с кодом*/
+  .code {
+	font-size: 18px;
 	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	color: #101110;
-  }
-   h1 {
-	font-family: "Ga Maamli", sans-serif;
-	font-size: 50px;
-	font-weight: 400;
+	line-height: 1.0;
    }
 
 
-  /* пример стилизации ссылок */
+  /* ссылки */
   .link {
 	text-decoration: none;
 	color: #829985;
@@ -112,8 +124,8 @@
   .link:hover {
 	color: #5d7260;
   }
-/* иконки для контактов */
-     
+
+  /* иконки для контактов */
  .social-icons img {
 	width: 32px;
 	height: 32px;
