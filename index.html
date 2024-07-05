@@ -73,16 +73,13 @@
             <section class="section" id="code">
                 <h2 class="section-title">Code examples</h2>
                 <p>Python code</p>
-                <code class="code">
-                    <pre>
-                        <i>
-                        import pandas as pd
+                <pre>
+                    <code class="code">
+                       <i>import pandas as pd
                         from pandas_profiling import ProfileReport
                         import click
                         from pathlib import Path
-                        
                         *анализ данных из файла csv и формирование отчета 
-                        
                         @click.command()
                         @click.option(
                             "-d",
@@ -105,10 +102,9 @@
                         ) -> None:
                             df = pd.read_csv(dataset_path)
                             profile = ProfileReport(df, title="Pandas Profiling Report")
-                            profile.to_file(save_report_path)
-                        </i>
-                    </pre>
-                </code>
+                            profile.to_file(save_report_path)</i>
+                    </code>
+                </pre>     
             </section>
             <section class="section" id="courses">
                 <h2 class="section-title">Courses</h2>
